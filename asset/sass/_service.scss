@@ -1,0 +1,82 @@
+.service-area{
+
+    @media #{$large-device} {
+        padding-top: 70px;
+    }
+    @media #{$medium-device} {
+        padding-top: 50px;
+    }
+    @media #{$small-device} {
+        padding-top: 35px;
+    }
+    @media #{$exSmall-device} {
+        padding-top: 25px;
+    }
+    .service-right{
+        .service-disc{
+            margin-top: 70px !important;
+
+            @media #{$large-device} {
+                margin-top: 50px !important;
+            }
+            @media #{$medium-device} {
+                margin-top: 35px !important;
+            }
+            @media #{$small-device} {
+                margin-top: 30px !important;
+            }
+            @media #{$exSmall-device} {
+                margin-top: 18px !important;
+                width: 75%;
+                margin: auto;
+            }
+            .ser-icon{
+                i{
+                    @include font-s(subExlarge);
+                    color: $paraColor;
+                    transition: color .3s;
+
+                    @media #{$large-device} {
+                        @include font-s(exlarge);
+                    }
+                    @media #{$medium-device} {
+                        @include font-s(large);
+                    }
+                    @media #{$small-device} {
+                        @include font-s(medium);
+                    }
+                    @media #{$exSmall-device} {
+                        @include font-s(large);
+                    }
+                
+                }
+            }
+            .ser-details{
+                h2{
+                    @include font-s(subSmall);
+                    font-family: $familyRoboto;
+                    font-weight: 400;
+                    color: $secondatyColor;
+                    margin-bottom: 25px;
+
+                    @media #{$large-device} {
+                        margin-bottom: 20px;
+                    }
+                    @media #{$medium-device} {
+                        margin-bottom: 16px;
+                    }
+                }
+                p{
+                    @extend .para-style;
+
+                    @media #{$medium-device} {
+                        text-align: left !important;
+                    }
+                }
+            }
+            &:hover i{
+                color:$btnColor;
+            }
+        }
+    }
+}

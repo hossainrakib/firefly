@@ -1,0 +1,149 @@
+.footer-area{
+    padding: 70px 0 90px 0;
+    border-top: 1px solid $grayBg;
+
+    @media #{$large-device} {
+        padding: 60px 0 70px 0;
+    }
+    @media #{$medium-device} {
+        padding: 450px 0 50px 0;
+    }
+    @media #{$small-device} {
+        padding: 30px 0 30px 0;
+    }
+    @media #{$exSmall-device} {
+        padding: 20px 0 40px 0;
+    }
+    .footer-privecy{
+        .footer-logo{
+            a{
+                display: inline-block;
+                img{
+                    max-height: 170px;
+                }
+            }
+        }
+        p{
+            @extend .para-style;
+            margin: 35px 0;
+
+            @media #{$small-device} {
+                margin: 28px 0;
+            }
+            @media #{$exSmall-device} {
+                margin: 10px 0;
+            }
+        }
+        ul{
+            li{
+                display: inline-block;
+                a{
+                    display: inline-block;
+                    font-family: $familyRoboto;
+                    @include font-w(regular);
+                    @include font-s(small);
+                    color: $tremplateColor;
+                    margin-right: 40px;
+                    text-transform: uppercase;
+                }
+                &:last-child a{
+                    margin-right: 0;
+                }
+            }
+        }
+        .copy-right{
+            p{
+                font-family: $familyRoboto;
+                @include font-s(subSmall);
+                @include font-w(regular);
+                text-transform: capitalize;
+                color: $copyColor;
+            }
+        }
+    }
+    .footer-widget{
+        h2{
+            @include font-w(regular);
+            @include font-s(subSmall);
+            text-transform: capitalize;
+            
+            @media #{$exSmall-device} {
+                @include font-s(subMedium);
+                margin: 10px 0;
+            }
+        }
+        ul{
+            padding-top: 10px;
+            @media #{$small-device} {
+                padding-top: 0px;
+            }
+            li{
+                a{
+                    @include font-w(regular);
+                    @include font-s(subSmall);
+                    color: $paraColor;
+                    margin-top: 20px;
+                    transition: .4s;
+                    display: block;
+                    &:hover{
+                        color: $tremplateColor;
+                    }
+
+                    @media #{$small-device} {
+                        margin-top: 10px;
+                    }
+                    @media #{$exSmall-device} {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+        .socile-icon{
+            ul{
+                li{
+                    display: inline-block;
+                    @media #{$medium-device} {
+                        display: block;
+                        text-align: center;
+                    }
+
+                    @media #{$exSmall-device} {
+                        display: inline-block;
+                    }
+                    a{
+                        display: inline-block;
+                        margin-right: 15px;
+                        @include font-s(subMedium);
+                        transition: .3s;
+
+                        
+                    @media #{$large-device} {
+                        margin-right: 10px;
+                        font-size: 20px;
+                    }    
+                    @media #{$medium-device} {
+                        margin-right: 10px;
+                        @include font-s(medium);
+                        display: block;
+                    }
+                    @media #{$small-device} {
+                        margin-right: 10px;
+                        @include font-s(medium);
+                    }
+                    @media #{$exSmall-device} {
+                        display: inline-block;
+                        font-size: 20px;
+                    }
+                        &:hover{
+                            color: $btnColor;
+                        }
+                        
+                    }
+                    :last-child a{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

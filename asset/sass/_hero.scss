@@ -1,0 +1,78 @@
+@import 'responsive';
+.hero-area{
+    .hero-contain{
+        h2{
+            @include font-s(dExlarge);
+            @include font-w(light);
+            line-height: 60px;
+            font-family: $familyRoboto;
+            color: $tremplateColor;
+            text-transform: math-auto;
+            transition: color .4s linear;
+            @extend .pb-50;
+
+
+            &:hover{
+                color: $btnColor;
+            }
+            @media #{$medium-device} {
+                @include font-s(large);
+                line-height: 45px;
+                padding-bottom: 35;
+            }
+            @media #{$small-device} {
+                @include font-s(subMedium);
+                line-height: 30px;
+                padding-bottom: 25px;
+            }
+            @media #{$exSmall-device} {
+                line-height: 30px;
+                @include font-s(medium);
+                padding-bottom: 20px;
+            }
+        }
+        p{
+            font-size: 18px;
+            font-family: $familyRoboto;
+            color: $socileColor;
+            line-height: 35px;
+            text-transform: capitalize;
+            margin: 0;
+
+            @media #{$medium-device} {
+                font-size: 15px;
+                line-height: 25px;
+                padding-bottom: 25;
+            }
+            @media #{$small-device} {
+                line-height: 20px;
+                font-size: 13px;
+                padding-bottom: 20px;
+            }
+            @media #{$exSmall-device} {
+                font-size: 12px;
+            }
+        }
+        button{
+            background: none;
+            border: none;
+            outline: none;
+            padding-top: 40px;
+
+            @media #{$medium-device} {
+                padding-top: 25;
+            }
+            @media #{$small-device} {
+                padding-top: 20px;
+            }
+            a{
+                @extend .btn;
+
+                &:hover{
+                    color: $white;
+                    background: $btnColor;
+                }
+            }
+        }
+    }
+}

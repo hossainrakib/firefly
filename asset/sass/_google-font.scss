@@ -1,0 +1,59 @@
+//google font
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap');
+//font-name variable
+$familyRoboto: 'Roboto', sans-serif;
+$familyOpenSans: 'Open Sans', sans-serif;
+
+//font-weight
+
+@mixin font-w($font-we) {
+    @if $font-we == light {
+        font-weight: 300;
+    }
+    @else if $font-we == regular {
+        font-weight: 400;
+    }
+    @else if $font-we == semiBold {
+        font-weight: 600;
+    }
+    @else if $font-we == bold {
+        font-weight: 700;
+    }
+    @else{
+        font-weight: none;
+    }
+}
+
+//font-size variable
+
+@mixin font-s($value) {
+    @if $value == small {
+        font-size: 12px;
+    }
+    @else if $value == subSmall {
+        font-size: 14px;
+    }
+    @else if $value == medium {
+        font-size: 15px;
+    }
+    @else if $value == subMedium {
+        font-size: 25px;
+    }
+    @else if $value == large {
+        font-size: 35px;
+    }
+    @else if $value == exlarge {
+        font-size: 40px;
+    }
+    @else if $value == subExlarge {
+        font-size: 45px;
+    }
+    @else if $value == dExlarge {
+        font-size: 55px;
+    }
+    @else {
+        font-size: none;
+    }
+}

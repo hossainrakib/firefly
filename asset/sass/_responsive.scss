@@ -1,0 +1,32 @@
+
+// responsive variable 
+// 1200-up
+$exLarge-device: "only screen and (min-width: 1200px)";
+// 992-1199
+$large-device: 'only screen and (max-width: 1199px)';
+// 768-991
+$medium-device: 'only screen and (max-width: 991px)';
+// 576-767
+$small-device: 'only screen and (max-width: 767px)';
+// 575-down 
+$exSmall-device: 'only screen and (min-width: 350px) and (max-width: 575px)';
+
+
+@media only screen and (max-width: 767px) {
+
+}
+/* extra-large xl-devices Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {  
+}
+/* lorge-device Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+
+    
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+}

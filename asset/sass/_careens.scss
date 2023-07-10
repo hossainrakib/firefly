@@ -1,0 +1,59 @@
+.careers-area{
+    .careers-wrapper{
+        padding: 230px 0 !important;
+
+        @media #{$large-device} {
+            padding: 180px 0 !important;
+        }
+        @media #{$medium-device} {
+            padding: 120px 0 !important;
+        }
+        @media #{$small-device} {
+            padding: 80px 0 !important;
+        }
+    }
+    .counter{
+        margin-top: 80px;
+
+        @media #{$large-device} {
+            margin-top: 70px !important;
+            padding-top: 20px !important;
+        }
+        @media #{$medium-device} {
+            margin-top: 50px !important;
+            padding-top: 15px !important;
+        }
+        @media #{$small-device} {
+            margin-top: 30px !important;
+            padding-top: 10px !important;
+        }
+        .main-counter{
+            h3{
+                @include font-s (medium);
+                @include font-w (light);
+                text-transform: uppercase;
+                font-family: $familyOpenSans;
+                color: $tremplateColor;
+
+                @media #{$small-device} {
+                    text-align: center;
+                }
+            }
+            a{
+                display: inline-block;
+                @include font-w(bold);
+                @include font-s (subExlarge);
+                transition: color .3s;
+
+                @media #{$small-device} {
+                    @include font-s (large);
+                    display: block;
+                    text-align: center;
+                }
+            }
+            &:hover a{
+                color: $btnColor;
+            }
+        }
+    }
+}

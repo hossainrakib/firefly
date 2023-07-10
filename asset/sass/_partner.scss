@@ -1,0 +1,61 @@
+.partner-area{
+    border-top:1px solid $borderColor;
+    border-bottom:1px solid $borderColor;
+    height: 170px;
+
+    @media #{$medium-device} {
+        height: auto;
+        padding: 15px 0;
+    }
+    .partner-contain{
+        h2{
+            @include font-s(subMedium);
+            @include font-w(light);
+            font-family: $familyRoboto;
+            text-transform: capitalize;
+            word-spacing: 7px;
+            color: $tremplateColor;
+            margin-bottom: 25px;
+
+            @media #{$medium-device} {
+                margin-bottom: 15px;
+                font-size:20px;
+                text-align: center;
+            }
+            @media #{$small-device} {
+                margin-bottom: 15px;
+                font-size:18px;
+            }
+            @media #{$exSmall-device} {
+                margin-bottom: 10px;
+                font-size:15px;
+            }
+        }
+        p{
+            @extend .para-style;
+
+            @media #{$small-device} {
+                font-size: 12px !important;
+                line-height: 30px !important;
+                text-align:center;
+            }
+        }
+    }
+    .partner-brand{
+        .partner-logo{
+            flex: 1;
+            margin-left: 60px;
+
+            @media #{$small-device} {
+                margin-left: 30px;
+            }
+            &:first-child{
+                margin-left: 0;
+            }
+            img{
+                max-width: 100%;
+                
+            }
+        }
+    }
+}

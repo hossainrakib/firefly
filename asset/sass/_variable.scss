@@ -1,0 +1,49 @@
+//glubal css
+* {
+    padding: 0 ;
+    margin: 0 ;
+    box-sizing: border-box;
+}
+//padding-margin
+@for $i from 1 to 121 {
+    .pt-#{$i}{padding-top: $i+px}
+}
+@for $i from 1 to 121 {
+    .pb-#{$i}{padding-bottom: $i+px}
+}
+
+
+
+html, body {
+    height: 100%;
+}
+Ul{
+    margin: 0;
+    list-style: none;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+a:hover{
+    text-decoration: none;
+}
+//text-color
+
+$socileColor: #6b7c93;
+$menuColor: #45505e;
+$tremplateColor: #303842;
+$paraColor: #8191a6;
+$btnColor: #4caf50;
+$contactColor:#000;
+$borderColor: #e5e5e5;
+$white:#fff;
+$secondatyColor:#252b33;
+$copyColor:#8191a6;
+
+//background-color
+
+$grayBg: #f5f5f5;
+$mainBg: #fafafa;
+
+
